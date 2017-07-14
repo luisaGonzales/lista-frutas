@@ -1,0 +1,15 @@
+* {
+  font-family: sans-serif;
+}
+body {
+  background-color: Silver  ;
+  color: Black;
+}
+button {
+  width: 100px;
+  height: 20px;
+  background-color: Crimson ;
+  border: none;
+  font-size: 1em;
+  color: white;
+}
