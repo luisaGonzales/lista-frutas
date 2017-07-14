@@ -3,7 +3,7 @@ var frutas = [];
 var lista = document.getElementById("lista");
 //Cuando hacen click y agregar funcionalidad
 //El nombre de la fruta tendrá la primera letra en mayúscula
-//No se podrán repetir frutas
+//Revisa si es que no se repiten el nombre de las frutas
 var addFruta = document.getElementById("agregar");
 addFruta.onclick = function(){
   var nuevaFruta = document.getElementById("frutas").value;
