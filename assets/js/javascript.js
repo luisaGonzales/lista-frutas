@@ -1,9 +1,9 @@
 //Almacenamiento de valores y variables
 var frutas = [];
 var lista = document.getElementById("lista");
-//Cuando hacen click y agregar funcionalidad
+//Agregar funcionalidad al momento de hacer click
 //El nombre de la fruta tendrá la primera letra en mayúscula
-//Revisa si es que no se repiten el nombre de las frutas
+//Revisa si es que no se repiten los nombres de las frutas ingresadas
 var addFruta = document.getElementById("agregar");
 addFruta.onclick = function(){
   var nuevaFruta = document.getElementById("frutas").value;
