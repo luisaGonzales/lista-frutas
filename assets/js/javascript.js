@@ -2,6 +2,8 @@
 var frutas = [];
 var lista = document.getElementById("lista");
 //Cuando hacen click y agregar funcionalidad
+//El nombre de la fruta tendrá la primera letra en mayúscula
+//No se podrán repetir frutas
 var addFruta = document.getElementById("agregar");
 addFruta.onclick = function(){
   var nuevaFruta = document.getElementById("frutas").value;
@@ -15,6 +17,7 @@ addFruta.onclick = function(){
       break;
     }
   }
+  //Evitar que se ingresen números o espacios vacíos
   if (!isNaN(parseInt(nuevaFruta))){
     alert("Los números no se llevan bien con las frutas");
     document.getElementById("frutas").value = "";
@@ -28,7 +31,7 @@ addFruta.onclick = function(){
     lista.innerHTML = mostrar(frutas);
   }
 }
-//Función para mostrar
+//Función para mostrar en el HTML
 function mostrar (arr){
   var html = "";
   for (var i = 0; i < frutas.length; i++){
